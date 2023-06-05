@@ -1,0 +1,1393 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="portfolio.css">
+
+
+</head>
+
+<body
+    style="font-family: poppins; height: 100vh;width: 100vw;overflow-x: hidden;background-color:var(--body);user-select: none;">
+
+
+    <div id="preloader"></div>
+
+
+    <!-- mainccontainer -->
+
+    <div class="container-fluid" id="mainccontainer"
+        style="height: 100vh;width: 97vw;overflow-x: hidden;position: sticky;top: 0;">
+
+        <div class="row" style="margin-left:2vw ;margin-right: 2vw;overflow: hidden;">
+            <div class="col-12" id="header"
+                style="display: flex;align-items: center;justify-content: center;z-index: 10;">
+                <div class="row" id="headerhight">
+                    <div class="col-xl-4 col-4 " style="display: flex;align-items: center;">
+                        <img src="logo.svg" alt="">
+                    </div>
+                    <div class="col-xl-8 col-8 " style="display: flex;align-items: center;justify-content: end;">
+                        <div>
+                            <button id="btn_download" onclick="location.href='nisar_resume.pdf';"
+                                style="background:linear-gradient(90deg, var(--main), var(--main1));border: none; border-radius: 50PX;align-items: center;justify-content: center;padding: 9px 30px;">
+                                <img id="Download" src="download.svg" alt="" style="height: 15px;">
+                                <p style="font-size: 14px;font-weight: 400;margin: 0;margin-left: 10px;color: white;">
+                                    <span id="download">Download</span> my resume
+                                </p>
+                            </button>
+
+                        </div>
+
+
+                        <!-- ------navbar start-->
+
+
+
+
+                        <div id="hamburger">
+                            <button style="background-color: transparent;border: none;" class="btn btn-primary"
+                                type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                                aria-controls="offcanvasExample">
+                                <img src="hamburger.svg" alt="">
+                            </button>
+
+                            <div style="width: 100vw;" class="offcanvas offcanvas-start" tabindex="-1"
+                                id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header" style=" height: 11vh;
+                                position: fixed;width: 97vw;top: 0;">
+                                    <div class="col-xl-4 col-4 " style="display: flex;align-items: center;">
+                                        <img src="logo.svg" alt="">
+                                    </div>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body"
+                                    style=" padding:0 25px 10px 25px; background-color: #3B009A;display: flex;align-items: center;justify-content: center;flex-direction: column;height: 100%;">
+                                    <div
+                                        style="text-align: center;color: var(--main);display: flex;align-items: center;flex-direction: column;">
+                                        <h1 style="font-size: 36px;font-weight: 600;line-height: 1.3;">ABOUT</h1>
+                                        <h1 style="font-size: 36px;font-weight: 600;line-height: 1.3;">CONNECT</h1>
+                                        <h1 style="font-size: 36px;font-weight: 600;line-height: 1.3;">PORTFOLIO</h1>
+                                        <div id="iconset_mob"
+                                            style="display: flex;justify-content: space-between;margin-top: 20px;width: 100%;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-linkedin"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-behance"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391.286.176.497.426.641.747.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922.281.426.461.957.461 1.563 0 .496-.105.922-.285 1.278a2.317 2.317 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.329 5.329 0 0 1-1.278.176L0 12.803V3h4.654zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a.981.981 0 0 0-.32-.355 1.84 1.84 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305v.005zm6.858-.035c.286.285.711.426 1.278.426.39 0 .746-.106 1.032-.286.285-.215.46-.426.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.135 4.135 0 0 1-1.527-.285 2.827 2.827 0 0 1-1.137-.782 2.851 2.851 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4.018 4.018 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396zm2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176-.215.105-.356.25-.496.39a.957.957 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978v-.957z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-dribbble"
+                                                viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8zm5.284 3.688a6.802 6.802 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A6.95 6.95 0 0 1 8 1.18zm-2.907.642A43.123 43.123 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.865 6.865 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.817 6.817 0 0 1-1.752-4.564zM8 14.837a6.785 6.785 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.246 28.246 0 0 1 1.457 5.18A6.722 6.722 0 0 1 8 14.837zm3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.774 6.774 0 0 1-2.924 4.573z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-instagram"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-github"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                            </svg>
+                                        </div>
+
+
+                                    </div>
+                                    <div
+                                        style="text-align: center;font-size: 14px;color: var(--main);position: absolute;bottom: 0;padding: 20px 50px; ">
+                                        <p style="line-height: 1.7;">
+                                            muhammednisarpktr@gmail.com <br>
+                                            +91 9895 410 700 <br>
+                                            Athanikkal, vellur(PO) 676517 Malappuram(D), kerala, india
+
+
+                                        </p>
+                                        <p style="margin: 0; font-size: 10px;">&#169 2023
+                                            All rights are reserved.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- ------navbar end-->
+
+
+
+
+
+
+
+
+                        <div id="iconset" style="align-items: center;margin-left: 4vw;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-behance" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391.286.176.497.426.641.747.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922.281.426.461.957.461 1.563 0 .496-.105.922-.285 1.278a2.317 2.317 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.329 5.329 0 0 1-1.278.176L0 12.803V3h4.654zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a.981.981 0 0 0-.32-.355 1.84 1.84 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305v.005zm6.858-.035c.286.285.711.426 1.278.426.39 0 .746-.106 1.032-.286.285-.215.46-.426.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.135 4.135 0 0 1-1.527-.285 2.827 2.827 0 0 1-1.137-.782 2.851 2.851 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4.018 4.018 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396zm2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176-.215.105-.356.25-.496.39a.957.957 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978v-.957z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-dribbble" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8zm5.284 3.688a6.802 6.802 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A6.95 6.95 0 0 1 8 1.18zm-2.907.642A43.123 43.123 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.865 6.865 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.817 6.817 0 0 1-1.752-4.564zM8 14.837a6.785 6.785 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.246 28.246 0 0 1 1.457 5.18A6.722 6.722 0 0 1 8 14.837zm3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.774 6.774 0 0 1-2.924 4.573z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-github" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- center row  -->
+            <div class="container-fluid scroll" style="width: 100vw;" data-0="transform:translateX(0%);"
+                data-3000="transform:translateX(-101.08%);">
+
+
+                <!-- page1 -->
+
+                <div class="col-12 col-xl-12 page " id="page1" style="min-height: 80vh;">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-xl-12 col-12 ">
+                                    <div class="row">
+                                        <div class="col-xl-7 col-12 " style="  min-height: 60vh;">
+                                            <div id="box2" class="row  pb-3 intro" style="height: 100%;">
+                                                <div class="col"
+                                                    style="border-radius: 20px;background-color: var(--introbg);">
+
+                                                    <div class="row" style="height: 100%;">
+                                                        <div class="col-sm-5"
+                                                            style="height: 100%;object-fit: contain; display: flex; padding:33px 33px 33px 35px;">
+
+
+                                                            <!-- <div style="border-radius: 20px; height: 100%;width: 100%;background: url(/tools/photo.png);background-position: center;background-repeat: no-repeat;background-size: cover;"></div> -->
+                                                            <div
+                                                                style="border-radius: 20px; height: 100%;width: 100%; background:var(--main1) url(photo-removebg-preview.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
+                                                            </div>
+
+
+                                                        </div>
+                                                        <div class="col-sm-7"
+                                                            style="display: flex;align-items: center;">
+                                                            <div style="color: var(--smicon);">
+                                                                <p
+                                                                    style="font-size: 24px;padding:0 33px 33px 0;margin: 0;">
+                                                                    <span style="line-height: 3;" id="smile">Hey
+                                                                        ,</span>
+                                                                    <br>
+                                                                    I am <span id="smile">NISAR,</span> a <span
+                                                                        id="smile">multi-skilled</span>
+                                                                    passionate designer with <span id="smile">3 year+
+                                                                        experience</span> in various design domains.
+                                                                    <span style="font-weight: 300;"> let
+                                                                        me ask
+                                                                        something, do you ever felt </span> <span
+                                                                        id="smile">creative
+                                                                        smile</span> ?
+                                                                </p>
+                                                                <p style="font-size: 16px;"> <span><a
+                                                                            style="font-size: medium;color: var(--main);"
+                                                                            href="javascript: document.body.scrollIntoView(false);">View
+                                                                            my portfolio</a>
+                                                                    </span> you can feel it.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xl-5 col-12 " style=" min-height: 60vh;">
+                                            <div id="box2" class="row ps-3 pb-3" style="height: 100%;">
+                                                <div class="col pe-0"
+                                                    style="border-radius: 20px;background-color: var(--aboutbg);">
+
+                                                    <div class="row "
+                                                        style="display: flex;flex-direction: column;justify-content: center;">
+                                                        <div class="col-sm-3"
+                                                            style=" display: flex; padding:33px 50px 0 35px;justify-content: space-between; font-size: 16px;width: 100%;font-weight: 400;">
+                                                            <p style="margin: 0;font-size: 16px;font-weight: 500;">About
+                                                            </p>
+                                                            <p style="color: var(--scroll);margin: 0;">scroll</p>
+
+                                                        </div>
+                                                        <div class="col" style="padding-top: 23px;padding-left: 0;">
+                                                            <div id="about"
+                                                                style="display: grid;height:45vh; overflow-y: auto;scroll-behavior: smooth;padding: 5px 40px 0 35px;">
+
+                                                                <p
+                                                                    style="font-size: 14px;font-weight: 300; color: var(--para);text-align: justify;">
+                                                                    Lorem ipsum dolor sit, <span
+                                                                        style="color: var(--main);font-weight: 500;">
+                                                                        Muhammed nisar </span> adipisicing
+                                                                    elit. At commodi similique dignissimos rem debitis,
+                                                                    ipsum beatae sit libero voluptatem cumque ut
+                                                                    sapiente quasi. Aliquid impedit quasi beatae aperiam
+                                                                    recusandae ab.Lorem ipsum dolor sit, amet
+                                                                    consectetur adipisicing
+                                                                    elit. At commodi similique dignissimos rem debitis,
+                                                                    ipsum beatae sit libero voluptatem cumque ut
+                                                                    sapiente quasi. Aliquid impedit quasi beatae aperiam
+                                                                    recusandae ab.Lorem ipsum dolor sit, amet
+                                                                    consectetur adipisicing
+                                                                    elit. At commodi similique dignissimos rem debitis,
+                                                                    ipsum beatae sit libero voluptatem cumque ut
+                                                                    sapiente quasi. Aliquid impedit quasi beatae aperiam
+                                                                    recusandae ab.Lorem ipsum dolor sit, amet
+                                                                    consectetur adipisicing
+                                                                    elit. At commodi similique dignissimos rem debitis,
+                                                                    ipsum beatae sit libero voluptatem cumque ut
+                                                                    sapiente quasi. Aliquid impedit quasi beatae aperiam
+                                                                    recusandae ab.Lorem ipsum dolor sit, amet
+                                                                    consectetur adipisicing
+                                                                    elit. At commodi similique dignissimos rem debitis,
+                                                                    ipsum beatae sit libero voluptatem cumque ut
+                                                                    sapiente quasi. Aliquid impedit quasi beatae aperiam
+                                                                    recusandae ab.
+                                                                </p>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12 col-12 p-0">
+                            <div class="row" style="min-height:20vh;margin: 0;">
+                                <div class="col-xl-4 pe-3" style="height: 100%;">
+                                    <div id="box2" class="row"
+                                        style="background-color: var(--edubg);min-height:20vh;border-radius: 20px;">
+                                        <div class="col">
+                                            <div class="col-sm-3"
+                                                style=" display: flex; padding:33px 50px 0 25px;justify-content: space-between; font-size: 16px;width: 100%;font-weight: 400;">
+                                                <p style="margin: 0;font-size: 16px;font-weight: 500;">Education
+                                                </p>
+
+
+                                            </div>
+                                            <div class="col" style="padding-top: 20px;padding-left: 0;">
+                                                <div id="Education"
+                                                    style="display: grid; overflow-y: auto;scroll-behavior: smooth;padding: 0 25px 0 25px;">
+                                                    <p style="font-size: 14px;color: var(--para);font-weight: 300;">MCA
+                                                        (master of computer application) & Bsc computer science from
+                                                        CALICUT UNIVERSITY</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-3 ps-4 pe-3" style="height: 100%;border-radius: 20px;">
+                                    <div id="box2" class="row"
+                                        style="background-color: var(--contactbg);min-height:20vh;border-radius: 20px;">
+                                        <div class="col">
+                                            <div class="col-sm-3"
+                                                style=" display: flex; padding:33px 50px 0 25px;justify-content: space-between; font-size: 16px;width: 100%;font-weight: 400;">
+                                                <p style="margin: 0;font-size: 16px;font-weight: 500;">Contact
+                                                </p>
+
+
+                                            </div>
+                                            <div class="col" style="padding-top: 20px;padding-left: 0;">
+                                                <div id="Education"
+                                                    style="display: grid;overflow-y: auto;scroll-behavior: smooth;padding: 0 25px 0 25px;">
+
+                                                    <p style="font-size: 14px;color: var(--para);font-weight: 300;">
+                                                        <span
+                                                            style="font-weight: 400;">Mail:</span>muhammednisarpktr@gmail.com
+                                                        <br>
+                                                        <span style="font-weight: 400;">Phone:</span>+91 9895 410 700
+                                                    </p>
+
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-5 ps-4" style="height: 100%;border-radius: 20px;">
+                                    <div id="box2" class="row"
+                                        style="background-color: var(--skillbg);min-height:20vh;border-radius: 20px;">
+                                        <div class="col">
+                                            <div class="col-sm-3"
+                                                style=" display: flex; padding:33px 50px 0 25px;justify-content: space-between; font-size: 16px;width: 100%;font-weight: 400;">
+                                                <p style="margin: 0;font-size: 16px;font-weight: 500;">Worked companies
+                                                    &#10084
+                                                </p>
+
+
+                                            </div>
+                                            <div class="col" style="padding: 23px 30px 0 25px;">
+                                                <div id="Companies"
+                                                    style="display: flex;overflow-x: scroll; overflow-y: hidden;scroll-behavior: smooth;">
+
+                                                    <div style="display: flex;">
+                                                        <div
+                                                            style="width: 5vw;height: 6vh;background-image: url(https://mir-s3-cdn-cf.behance.net/team/138/309485188099.5b9ada28eb2b5.jpg);background-repeat: no-repeat;background-size: cover;background-position: center;">
+                                                        </div>
+                                                        <div
+                                                            style="width: 5vw;height: 6vh;background-image: url(https://lh3.googleusercontent.com/p/AF1QipN2QhWh7VaIGUFPVqAhibbwirzU-MuMMVZsp_36=s1360-w1360-h1020);background-repeat: no-repeat;background-size: cover;background-position: center;">
+                                                        </div>
+
+                                                        <div
+                                                            style="width: 5vw;height: 6vh;background-image: url(data:image/png;base64,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);
+                                                    background-repeat: no-repeat;background-size: contain;background-position: center;">
+                                                        </div>
+                                                        <div
+                                                            style="width: 5vw;height: 6vh;background-image: url(data:image/png;base64,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);
+                                                background-repeat: no-repeat;background-size: contain;background-position: center;">
+                                                        </div>
+
+                                                        <div
+                                                            style="width: 5vw;height: 6vh;background-color: var(--body);">
+                                                        </div>
+                                                        <div
+                                                            style="width: 5vw;height: 6vh;background-color: var(--body);">
+                                                        </div>
+                                                        <div
+                                                            style="width: 5vw;height: 6vh;background-color: var(--body);">
+                                                        </div>
+                                                        <div
+                                                            style="width: 5vw;height: 6vh;background-color: var(--body);">
+                                                        </div>
+                                                        <div
+                                                            style="width: 5vw;height: 6vh;background-color: var(--body);">
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- page2 -->
+
+                <div class="col-12 col-xl-12 page" id="page2" style="min-height: 80vh; ">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-xl-12 col-12 ">
+                                    <div class="row">
+                                        <div class="col-xl-1 col-12 " style=" overflow: hidden; min-height: 80vh;">
+                                            <div id="box" class="row  " style="height: 100%;">
+                                                <div class="col"
+                                                    style="border-radius: 20px;background-color: var(--introbg);width: 100%;">
+                                                    <div class="row "
+                                                        style="height: 100%;display: flex;flex-direction: column;justify-content: center;">
+                                                        <div class="col-sm-3"
+                                                            style="padding-top: 33px;font-size: 16px;width: 100%;text-align: center;font-weight: 500;">
+                                                            Tools</div>
+                                                        <div class="col" style="padding-top: 24px;">
+                                                            <div id="tools"
+                                                                style="display: grid;justify-content: center;height:67vh; overflow-y: auto;scroll-behavior: smooth;">
+                                                                <img title="figma" src="/tools/figma.svg" alt="">
+                                                                <img title="framer" src="/tools/framer.svg" alt="">
+                                                                <img title="adobe Xd" src="/tools/xd.svg" alt="">
+                                                                <img title="adobe illustrator" src="/tools/ai.svg"
+                                                                    alt="">
+                                                                <img title="adobe photoshop" src="/tools/ps.svg" alt="">
+                                                                <img title="adobe after effects" src="/tools/ae.svg"
+                                                                    alt="">
+                                                                <img title="adobe indesign" src="/tools/id.svg" alt="">
+                                                                <img title="adobe premier pro" src="/tools/pr.svg"
+                                                                    alt="">
+                                                                <img title="html5" src="/tools/html.svg" alt="">
+                                                                <img title="css" src="/tools/css.svg" alt="">
+                                                                <img title="javascript" src="/tools/js.svg" alt="">
+                                                                <img title="bootstap" src="/tools/b5.svg" alt="">
+                                                                <img title="procreate" src="/tools/pcrt.svg" alt="">
+                                                                <img title="cinema 4d" src="/tools/c4d.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-12 " style=" overflow: hidden; min-height: 60vh;">
+                                            <div id="box" class="row ps-3" style="height: 100%;">
+                                                <div class="col pe-0"
+                                                    style="border-radius: 20px;background-color: var(--aboutbg);">
+                                                    <div class="row "
+                                                        style="height: 100%;display: flex;flex-direction: column;justify-content: center;">
+                                                        <div class="col-sm-3"
+                                                            style=" display: flex; padding:33px 50px 0 35px;justify-content: space-between; font-size: 16px;width: 100%;font-weight: 400;">
+                                                            <p style="margin: 0;font-size: 16px;font-weight: 500;">
+                                                                Experience</p>
+                                                            <p style="color: var(--scroll);margin: 0;">scroll</p>
+                                                        </div>
+                                                        <div class="col" style="padding-top: 23px;padding-left: 0;">
+                                                            <div id="exp"
+                                                                style="display: grid;height:67vh; overflow-y: auto;scroll-behavior: smooth;padding: 15px 40px 0 35px;">
+                                                                <section
+                                                                    style="color: var(--wb);background-color: var(--cardwhite);scroll-behavior: smooth;">
+                                                                    <ul class="timeline " id="timeline">
+                                                                        <li class="timeline-item mb-5">
+                                                                            <h5
+                                                                                style="font-size: 16px;font-weight: 500;color: var(--smicon);">
+                                                                                Desglobal
+                                                                            </h5>
+                                                                            <p class=" mb-2 "
+                                                                                style="font-size: 12px;color: var(--para);font-weight: 300;">
+                                                                                March
+                                                                                2020
+                                                                                -present</p>
+                                                                            <p id="common_para">
+                                                                                Lorem ipsum dolor sit amet consectetur
+                                                                                adipisicing elit. Sit
+                                                                                necessitatibus adipisci, ad alias,
+                                                                                voluptate pariatur officia
+                                                                                repellendus repellat inventore fugit
+                                                                                perferendis totam dolor
+                                                                                voluptas et corrupti distinctio maxime
+                                                                                corporis optio?
+                                                                                Lorem ipsum dolor sit amet consectetur
+                                                                                adipisicing elit. Dolores quisquam
+                                                                                provident eos itaque at temporibus
+                                                                                sequi. Culpa eius voluptates expedita,
+                                                                                temporibus illo numquam eligendi
+                                                                                necessitatibus, magnam adipisci sapiente
+                                                                                assumenda minus?
+                                                                            </p>
+                                                                        </li>
+                                                                        <li class="timeline-item mb-5">
+
+                                                                            <h5
+                                                                                style="font-size: 16px;font-weight: 500;color: var(--smicon);">
+                                                                                Cocoshoppy
+                                                                            </h5>
+                                                                            <p class=" mb-2 "
+                                                                                style="font-size: 12px;color: var(--para);font-weight: 300;">
+                                                                                March
+                                                                                2020
+                                                                                -present</p>
+                                                                            <p id="common_para" ;>
+                                                                                Lorem ipsum dolor sit amet consectetur
+                                                                                adipisicing elit. Sit
+                                                                                necessitatibus adipisci, ad alias,
+                                                                                voluptate pariatur officia
+                                                                                repellendus repellat inventore fugit
+                                                                                perferendis totam dolor
+                                                                                voluptas et corrupti distinctio maxime
+                                                                                corporis optio?
+                                                                                Lorem ipsum dolor sit amet consectetur
+                                                                                adipisicing elit. Dolores quisquam
+                                                                                provident eos itaque at temporibus
+                                                                                sequi. Culpa eius voluptates expedita,
+                                                                                temporibus illo numquam eligendi
+                                                                                necessitatibus, magnam adipisci sapiente
+                                                                                assumenda minus?
+                                                                            </p>
+                                                                        </li>
+                                                                        <li class="timeline-item mb-5">
+                                                                            <h5
+                                                                                style="font-size: 16px;font-weight: 500;color: var(--smicon);">
+                                                                                Freelancer</h5>
+                                                                            <p class=" mb-2 "
+                                                                                style="font-size: 12px;color: var(--para);font-weight: 300;">
+                                                                                March
+                                                                                2020
+                                                                                -present</p>
+                                                                            <p id="common_para">
+                                                                                Lorem ipsum dolor sit amet consectetur
+                                                                                adipisicing elit. Sit
+                                                                                necessitatibus adipisci, ad alias,
+                                                                                voluptate pariatur officia
+                                                                                repellendus repellat inventore fugit
+                                                                                perferendis totam dolor
+                                                                                voluptas et corrupti distinctio maxime
+                                                                                corporis optio?
+                                                                                Lorem ipsum dolor sit amet consectetur
+                                                                                adipisicing elit. Dolores quisquam
+                                                                                provident eos itaque at temporibus
+                                                                                sequi. Culpa eius voluptates expedita,
+                                                                                temporibus illo numquam eligendi
+                                                                                necessitatibus, magnam adipisci sapiente
+                                                                                assumenda minus?
+                                                                            </p>
+                                                                        </li>
+
+
+
+                                                                    </ul>
+                                                                </section>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+
+
+
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xl-7 col-12 " style=" overflow: hidden; min-height: 60vh;">
+                                            <div id="box" class="row ps-3" style="height: 100%;">
+                                                <div class="col pe-0"
+                                                    style="border-radius: 20px;background-color: var(--aboutbg);">
+                                                    <div class="row "
+                                                        style="height: 100%;display: flex;flex-direction: column;justify-content: center;">
+                                                        <div class="col-sm-3"
+                                                            style=" display: flex; padding:33px 50px 0 35px;justify-content: space-between; font-size: 16px;width: 100%;font-weight: 400;">
+                                                            <p style="margin: 0;font-size: 16px;font-weight: 500;">
+                                                                Portfolio</p>
+                                                            <p style="color: var(--scroll);margin: 0;">scroll</p>
+
+                                                        </div>
+                                                        <div class="col" style="padding-top: 23px;padding-left: 0;">
+                                                            <div id="portfolio"
+                                                                style="display: grid;height:67vh; overflow-y: auto;scroll-behavior: smooth;padding: 15px 40px 0 35px;">
+
+                                                                <div class="row row-cols-1 row-cols-md-2 g-4">
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://miro.medium.com/v2/resize:fit:1000/0*2v-vAaNyzItuRiu8"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title"><a
+                                                                                        style="color: var(--main);"
+                                                                                        href=""> Concept app design</a>
+                                                                                </h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content. This content is a little
+                                                                                    bit longer.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCDWv4qnjvVpSjybSeIgzR-o3JJgrPZTfdog&usqp=CAU"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title"><a
+                                                                                        style="color: var(--main);"
+                                                                                        href=""> Concept app design</a>
+                                                                                </h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content. This content is a little
+                                                                                    bit longer.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://www.free-mockup.com/wp-content/uploads/edd/2023/04/PSD-MacBook-Free-UI-Mockup-600x450.jpg"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title"><a
+                                                                                        style="color: var(--main);"
+                                                                                        href=""> Concept app design</a>
+                                                                                </h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://file.mockplus.com/image/2017/04/2a762850-728d-4114-9eae-fab8b272bbe0.jpg"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title"><a
+                                                                                        style="color: var(--main);"
+                                                                                        href=""> Concept app design</a>
+                                                                                </h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content. This content is a little
+                                                                                    bit longer.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/309093868/original/d08c23b4387ee9b4bc1510f078d64b29bb4ae312/design-ux-ui-for-mobile-app-for-ios-or-android.png"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title"><a
+                                                                                        style="color: var(--main);"
+                                                                                        href=""> Concept app design</a>
+                                                                                </h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content. This content is a little
+                                                                                    bit longer.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://i.pinimg.com/originals/06/b5/91/06b5914bd410e512eb55accf18afc3d6.jpg"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title"><a
+                                                                                        style="color: var(--main);"
+                                                                                        href=""> Concept app design</a>
+                                                                                </h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content. This content is a little
+                                                                                    bit longer.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://dreamwalk.com.au/wp-content/uploads/2022/02/app-ui-design-with-rounded-corners.jpeg"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title"><a
+                                                                                        style="color: var(--main);"
+                                                                                        href=""> Concept app design</a>
+                                                                                </h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://dreamwalk.com.au/wp-content/uploads/2022/02/app-ui-design-with-rounded-corners.jpeg"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title"><a
+                                                                                        style="color: var(--main);"
+                                                                                        href=""> Concept app design</a>
+                                                                                </h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content. This content is a little
+                                                                                    bit longer.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://dreamwalk.com.au/wp-content/uploads/2022/02/app-ui-design-with-rounded-corners.jpeg"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title"><a
+                                                                                        style="color: var(--main);"
+                                                                                        href=""> Concept app design</a>
+                                                                                </h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content. This content is a little
+                                                                                    bit longer.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://dreamwalk.com.au/wp-content/uploads/2022/02/app-ui-design-with-rounded-corners.jpeg"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title">Card title</h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content. This content is a little
+                                                                                    bit longer.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://dreamwalk.com.au/wp-content/uploads/2022/02/app-ui-design-with-rounded-corners.jpeg"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title">Card title</h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://dreamwalk.com.au/wp-content/uploads/2022/02/app-ui-design-with-rounded-corners.jpeg"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title">Card title</h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content. This content is a little
+                                                                                    bit longer.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- ------- -->
+
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ----md-----------md----------md------ -->
+
+            <div id="md" class="container-fluid" style="width: 100vw;scroll-behavior: smooth;">
+
+
+                <!-- page1 -->
+
+                <div class="col-12 col-xl-12 page " id="page1" style="scroll-behavior: smooth; ">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-xl-12 col-12 ">
+                                    <div class="row">
+                                        <div class="col-xl-7 col-12 " style="  max-height:fit-content;">
+                                            <div class="row  pb-3">
+                                                <div class="col" id="padd"
+                                                    style="border-radius: 20px;background-color: var(--introbg);">
+
+                                                    <div class="row" style="height: 100%;">
+                                                        <div class="col-md-5"
+                                                            style="object-fit: contain; display: flex;justify-content: space-between; ">
+
+
+                                                            <div id="mainimg"
+                                                                style="border-radius: 20px;  background:var(--main1) url(photo-removebg-preview.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
+                                                            </div>
+                                                            <div id="maindownld"
+                                                                style="padding: 20px 20px;flex-direction: column;justify-content: center;align-items: center; border-radius: 20px;height: 35vw;background:linear-gradient(30deg,var(--main),var(--main1)); ">
+                                                                <img style="width: 15%;margin-bottom: 5px;"
+                                                                    src="download.svg" alt="">
+                                                                <p
+                                                                    style="color: var(--body);font-size: 2vh;margin: 0;text-align: center;">
+                                                                    download my resume</p>
+                                                            </div>
+
+
+
+                                                        </div>
+                                                        <div class="col-md-7"
+                                                            style="display: flex;align-items: center;">
+                                                            <div style="color: var(--smicon);">
+                                                                <p id="hey">
+                                                                    <span style="line-height: 3;" id="smile">Hey
+                                                                        ,</span>
+                                                                    <br>
+                                                                    I am <span id="smile">NISAR,</span> a <span
+                                                                        id="smile">multi-skilled</span>
+                                                                    passionate designer with <span id="smile">3 year+
+                                                                        experience</span> in various design domains.
+                                                                    <span style="font-weight: 300;"> let
+                                                                        me ask
+                                                                        something, do you ever felt </span> <span
+                                                                        id="smile">creative
+                                                                        smile</span> ?
+                                                                </p>
+                                                                <p id="heyview"> <span><a style="color: var(--main);"
+                                                                            href="#">View
+                                                                            my portfolio</a>
+                                                                    </span> you can feel it.</p>
+                                                                <div id="smiconintro"
+                                                                    style="justify-content: space-between;margin-top: 20px;width: 46vw;height: 20px;">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                                                    </svg>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        class="bi bi-behance" viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391.286.176.497.426.641.747.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922.281.426.461.957.461 1.563 0 .496-.105.922-.285 1.278a2.317 2.317 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.329 5.329 0 0 1-1.278.176L0 12.803V3h4.654zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a.981.981 0 0 0-.32-.355 1.84 1.84 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305v.005zm6.858-.035c.286.285.711.426 1.278.426.39 0 .746-.106 1.032-.286.285-.215.46-.426.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.135 4.135 0 0 1-1.527-.285 2.827 2.827 0 0 1-1.137-.782 2.851 2.851 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4.018 4.018 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396zm2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176-.215.105-.356.25-.496.39a.957.957 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978v-.957z" />
+                                                                    </svg>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        class="bi bi-dribbble" viewBox="0 0 16 16">
+                                                                        <path fill-rule="evenodd"
+                                                                            d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8zm5.284 3.688a6.802 6.802 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A6.95 6.95 0 0 1 8 1.18zm-2.907.642A43.123 43.123 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.865 6.865 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.817 6.817 0 0 1-1.752-4.564zM8 14.837a6.785 6.785 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.246 28.246 0 0 1 1.457 5.18A6.722 6.722 0 0 1 8 14.837zm3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.774 6.774 0 0 1-2.924 4.573z" />
+                                                                    </svg>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        class="bi bi-instagram" viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                                                    </svg>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        class="bi bi-github" viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xl-5 col-12 " style=" max-height:fit-content;">
+                                            <div class="row  pb-3" style="height: 100%;">
+                                                <div class="col pe-0"
+                                                    style="border-radius: 20px;background-color: var(--aboutbg);">
+                                                    <div class="col" id="padd"
+                                                        style="border-radius: 20px;background-color: var(--introbg);">
+
+                                                        <div class="row "
+                                                            style="display: flex;flex-direction: column;justify-content: center;">
+                                                            <div class="col-sm-3"
+                                                                style=" display: flex; padding:15px 10px 23px 0;justify-content: space-between; font-size: 16px;width: 100%;font-weight: 400;">
+                                                                <p style="margin: 0;font-size: 16px;font-weight: 500;">
+                                                                    About</p>
+
+                                                            </div>
+                                                            <div style="padding: 0 13px 0 0;">
+                                                                <p
+                                                                    style="text-align: justify;color: var(--para);font-size: 16px;font-weight: 300;margin: 0;">
+                                                                    Lorem <span style="color: var(--main);">Muhammed
+                                                                        nisar</span> amet consectetur adipisicing
+                                                                    elit. Eos corrupti veritatis nemo eveniet, nisi,
+                                                                    obcaecati aliquid maiores autem quod pariatur enim
+                                                                    harum aspernatur suscipit aperiam ducimus iusto quis
+                                                                    id neque. Lorem ipsum dolor sit amet consectetur
+                                                                    adipisicing
+                                                                    elit. Eos corrupti veritatis nemo eveniet, nisi,
+                                                                    obcaecati aliquid maiores autem quod pariatur enim
+                                                                    harum aspernatur suscipit aperiam ducimus iusto quis
+                                                                    id neque. Lorem ipsum dolor sit amet consectetur
+                                                                    adipisicing
+                                                                    elit. Eos corrupti veritatis nemo eveniet, nisi,
+                                                                    obcaecati aliquid maiores autem quod pariatur enim
+                                                                    harum aspernatur suscipit aperiam ducimus iusto quis
+                                                                    id neque.
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                    elit. Eos corrupti veritatis nemo eveniet, nisi,
+                                                                    obcaecati aliquid maiores autem quod pariatur enim
+                                                                    harum aspernatur suscipit aperiam ducimus iusto quis
+                                                                    id neque.
+                                                                </p>
+                                                            </div>
+
+
+                                                        </div>
+
+
+
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12 col-12 p-0">
+                            <div class="row" style="min-height:20vh;margin: 0;">
+                                <div class="col-xl-4 " style="height: 100%;">
+                                    <div class="row"
+                                        style="background-color: var(--edubg);min-height:20vh;border-radius: 20px;">
+                                        <div class="col">3</div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-3 pt-3" style="height: 100%;border-radius: 20px;">
+                                    <div class="row "
+                                        style="background-color: var(--contactbg);min-height:20vh;border-radius: 20px;">
+                                        <div class="col">4</div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-5 pt-3" style="height: 100%;border-radius: 20px;">
+                                    <div class="row"
+                                        style="background-color: var(--skillbg);min-height:20vh;border-radius: 20px;">
+                                        <div class="col">5</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- page2 -->
+
+                <div class="col-12 col-xl-12 page" id="page2" style="min-height: 80vh; ">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-xl-12 col-12 ">
+                                    <div class="row">
+                                        <div class="  col-12 pt-3 " style=" overflow: hidden;">
+                                            <div class="row  " style="height: 100%;">
+                                                <div class="col"
+                                                    style="border-radius: 20px;background-color: var(--introbg);padding: 0;">
+                                                    <div class="col-sm-3"
+                                                        style=" display: flex; padding:35px 10px 20px 20px;justify-content: space-between; font-size: 16px;width: 100%;font-weight: 400;">
+                                                        <p style="margin: 0;font-size: 16px;font-weight: 500;">
+                                                            Tools</p>
+
+                                                    </div>
+                                                    <div class="col-sm-3"
+                                                        style=" display: flex; padding:0 10px 25px 20px;justify-content: space-between; font-size: 16px;width: 100%;font-weight: 400;">
+                                                        <p style="margin: 0;font-size: 16px;font-weight: 300;color: var(--para);text-align: justify;">
+                                                            Figma &#8226 Framer &#8226 Xd &#8226 Illustrator &#8226 Photoshop &#8226
+                                                            After effects &#8226 Indesign &#8226 Premier pro &#8226 Html5 &#8226 Css &#8226
+                                                            Javascript &#8226 Bootstap &#8226 Procreate &#8226 Cinema 4d
+                                                        </p>
+
+                                                    </div>
+                                                   
+                                                    <div id="toolimg1" class="row row-cols-5 row-cols-md-6 g-4"
+                                                        style="padding: 0 5px 25px 5px;">
+                                                        <img title="figma" src="/tools/figma.svg" alt="">
+                                                        <img title="framer" src="/tools/framer.svg" alt="">
+                                                        <img title="adobe Xd" src="/tools/xd.svg" alt="">
+                                                        <img title="adobe illustrator" src="/tools/ai.svg" alt="">
+                                                        <img title="adobe photoshop" src="/tools/ps.svg" alt="">
+                                                        <img title="adobe after effects" src="/tools/ae.svg" alt="">
+                                                        <img title="adobe indesign" src="/tools/id.svg" alt="">
+                                                        <img title="adobe premier pro" src="/tools/pr.svg" alt="">
+                                                        <img title="html5" src="/tools/html.svg" alt="">
+                                                        <img title="css" src="/tools/css.svg" alt="">
+                                                        <img title="javascript" src="/tools/js.svg" alt="">
+                                                        <img title="bootstap" src="/tools/b5.svg" alt="">
+                                                        <img title="procreate" src="/tools/pcrt.svg" alt="">
+                                                        <img title="cinema 4d" src="/tools/c4d.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 pt-3" style=" overflow: hidden; min-height: 60vh;">
+                                            <div class="row " style="height: 100%;">
+                                                <div class="col pe-0"
+                                                    style="border-radius: 20px;background-color: var(--aboutbg);">
+                                                    7
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 pt-3" style=" overflow: hidden; max-height:fit-content;">
+                                            <div class="row " style="height: 100%;">
+                                                <div id="portfolio1" class="col pe-0 ps-0"
+                                                    style="border-radius: 20px;background-color: var(--aboutbg);">
+
+                                                    <div class="col" id="padd"
+                                                        style="border-radius: 20px;background-color: var(--introbg);">
+
+                                                        <div class="row "
+                                                            style="display: flex;flex-direction: column;justify-content: center;">
+                                                            <div class="col-sm-3"
+                                                                style=" display: flex; padding:15px 10px 23px 15px;justify-content: space-between; font-size: 16px;width: 100%;font-weight: 400;">
+                                                                <p style="margin: 0;font-size: 16px;font-weight: 500;">
+                                                                    Portfolio</p>
+
+                                                            </div>
+                                                            <div>
+                                                                <div class="row row-cols-1 row-cols-md-2 g-4">
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://miro.medium.com/v2/resize:fit:1000/0*2v-vAaNyzItuRiu8"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title"><a
+                                                                                        style="color: var(--main);"
+                                                                                        href=""> Concept app design</a>
+                                                                                </h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content. This content is a little
+                                                                                    bit longer.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCDWv4qnjvVpSjybSeIgzR-o3JJgrPZTfdog&usqp=CAU"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title"><a
+                                                                                        style="color: var(--main);"
+                                                                                        href=""> Concept app design</a>
+                                                                                </h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content. This content is a little
+                                                                                    bit longer.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://www.free-mockup.com/wp-content/uploads/edd/2023/04/PSD-MacBook-Free-UI-Mockup-600x450.jpg"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title"><a
+                                                                                        style="color: var(--main);"
+                                                                                        href=""> Concept app design</a>
+                                                                                </h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://file.mockplus.com/image/2017/04/2a762850-728d-4114-9eae-fab8b272bbe0.jpg"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title"><a
+                                                                                        style="color: var(--main);"
+                                                                                        href=""> Concept app design</a>
+                                                                                </h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content. This content is a little
+                                                                                    bit longer.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/309093868/original/d08c23b4387ee9b4bc1510f078d64b29bb4ae312/design-ux-ui-for-mobile-app-for-ios-or-android.png"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title"><a
+                                                                                        style="color: var(--main);"
+                                                                                        href=""> Concept app design</a>
+                                                                                </h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content. This content is a little
+                                                                                    bit longer.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://i.pinimg.com/originals/06/b5/91/06b5914bd410e512eb55accf18afc3d6.jpg"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title"><a
+                                                                                        style="color: var(--main);"
+                                                                                        href=""> Concept app design</a>
+                                                                                </h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content. This content is a little
+                                                                                    bit longer.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://dreamwalk.com.au/wp-content/uploads/2022/02/app-ui-design-with-rounded-corners.jpeg"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title"><a
+                                                                                        style="color: var(--main);"
+                                                                                        href=""> Concept app design</a>
+                                                                                </h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://dreamwalk.com.au/wp-content/uploads/2022/02/app-ui-design-with-rounded-corners.jpeg"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title"><a
+                                                                                        style="color: var(--main);"
+                                                                                        href=""> Concept app design</a>
+                                                                                </h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content. This content is a little
+                                                                                    bit longer.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://dreamwalk.com.au/wp-content/uploads/2022/02/app-ui-design-with-rounded-corners.jpeg"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title"><a
+                                                                                        style="color: var(--main);"
+                                                                                        href=""> Concept app design</a>
+                                                                                </h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content. This content is a little
+                                                                                    bit longer.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://dreamwalk.com.au/wp-content/uploads/2022/02/app-ui-design-with-rounded-corners.jpeg"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title">Card title</h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content. This content is a little
+                                                                                    bit longer.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://dreamwalk.com.au/wp-content/uploads/2022/02/app-ui-design-with-rounded-corners.jpeg"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title">Card title</h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card">
+                                                                            <img src="https://dreamwalk.com.au/wp-content/uploads/2022/02/app-ui-design-with-rounded-corners.jpeg"
+                                                                                class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title">Card title</h5>
+                                                                                <p class="card-text">This is a longer
+                                                                                    card with supporting text below as a
+                                                                                    natural lead-in to additional
+                                                                                    content. This content is a little
+                                                                                    bit longer.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <!-- center_div_end -->
+
+
+            <div class="col-12 col-xl-12 " style="overflow: hidden;">
+                <div class="row">
+                    <div class="col-12"
+                        style=" height: 6vh; display: flex;align-items: center;justify-content:space-between;">
+
+                        <p style="margin: 0; font-size: 10px;">&#169 2023
+                            All rights are reserved.</p>
+                        <p id="thankyou" style="margin: 0; font-size: 14px;">Thank you</p>
+
+                        <div class="scroll_indicator">
+                            <div id="scroll_indicator"></div>
+                        </div>
+
+                        <!-- <p style="font-size: 16px;color: var(--scroll);margin-bottom: 0;margin-left: 1rem;">scroll</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+
+    <script type="text/javascript" src="skrollr.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+
+        window.onscroll = () => {
+            let maxHeight = window.document.body.scrollHeight - window.innerHeight;
+            let percentage = ((window.scrollY) / maxHeight) * 100;
+            document.querySelector('#scroll_indicator').style.width = percentage + '%';
+        }
+
+        const boxes = document.querySelectorAll('#box');
+        const boxes2 = document.querySelectorAll('#box2');
+        window.addEventListener('scroll', checkBoxes)
+        window.addEventListener('onclick', checkBoxes2)
+
+        checkBoxes()
+        checkBoxes2()
+
+        function checkBoxes2() {
+            const triggerBottom = window.innerHeight / 5 * 8
+            boxes2.forEach(box => {
+                const boxTop = box.getBoundingClientRect().left
+                if (boxTop < triggerBottom) {
+                    box.classList.add('show2')
+                } else {
+                    box.classList.remove('show2')
+                }
+            })
+        }
+
+        function checkBoxes() {
+            const triggerBottom = window.innerHeight / 5 * 10
+            boxes.forEach(box => {
+                const boxTop = box.getBoundingClientRect().left
+                if (boxTop < triggerBottom) {
+                    box.classList.add('show')
+                } else {
+                    box.classList.remove('show')
+                }
+            })
+        }
+
+        var loader = document.getElementById('preloader');
+        window.addEventListener("load", function () {
+            loader.style.display = "none"
+        })
+
+    </script>
+
+
+
+</body>
+
+</html>

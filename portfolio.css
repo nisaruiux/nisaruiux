@@ -1,0 +1,470 @@
+
+:root{
+    --body:#FCF1FF;
+    --para:#808080;
+    /* --toolbg:#F6F6F6;
+    --expbg:#F6F6F6;
+    --potfoliobg:#F1F5FE; */
+
+
+    --toolbg:#ffffff;
+    --expbg:#ffffff;
+    --potfoliobg:#ffffff;
+
+    --smicon:#3F3F3F;
+    --main:#8F00FF;
+    --main1:#BB64FF;
+    /* --introbg:#F6F6F6;
+    --aboutbg:#F1F5FE;
+    --edubg:#f0f0f0;
+    --skillbg:#FBF6FF;
+    --contactbg:#EEFFF0; */
+
+
+     --introbg:#ffffff;
+    --aboutbg:#ffffff;
+    --edubg:#ffffff;
+    --skillbg:#ffffff;
+    --contactbg:#ffffff;
+    
+    --scroll:#cfcfcf;
+}
+
+#preloader{
+  background: #ffffff url(Circles-menu-3.gif) no-repeat center center;
+  background-size: 8vh;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+
+body::-webkit-scrollbar { 
+  width: 0 !important;
+  display: none; 
+}
+#tools::-webkit-scrollbar { 
+  width: 0 !important;
+  display: none; 
+}
+#exp::-webkit-scrollbar { 
+  width: 0 !important;
+  display: none; 
+}
+#portfolio::-webkit-scrollbar { 
+  width: 0 !important;
+  display: none; 
+}
+#about::-webkit-scrollbar { 
+  width: 0 !important;
+  display: none; 
+}
+#Education::-webkit-scrollbar { 
+  width: 0 !important;
+  display: none; 
+}
+#Companies::-webkit-scrollbar { 
+  width: 0 !important;
+  display: none; 
+}
+
+
+  #scroll_indicator{
+    width: 150px;
+    height: 3px;
+    border-radius: 50px;
+    background-color: #8F00FF;
+}
+.scroll_indicator{
+    width: 150px;
+    height: 3px;
+    background-color: #d9a8ff;
+    border-radius: 50px;
+}
+
+.timeline {
+  border-left: 1px solid var(--body);
+  position: relative;
+  list-style: none;
+}
+
+.timeline .timeline-item {
+  position: relative;
+}
+
+.timeline .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;margin-top: 6px;
+}
+
+.timeline .timeline-item:after {
+  background-color: var(--main);
+  left: -36px;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  content: "";
+}
+#common_para{
+  font-size: 14px;
+  color: var(--para);
+  font-weight: 300;text-align: justify;
+}
+
+#smile{
+  font-weight: 500;
+}
+#Companies div{
+  margin-right: 1rem;
+  border-radius: 5px;
+
+}
+
+/* -----------------card-start---------------------- */
+
+
+.card-text{
+  font-size: 14px;
+  color: var(--para);
+  font-weight: 300;
+}
+.card-title{
+  font-size: 16px;
+  color: var(--smicon);
+}
+
+
+/* -----------------card-end---------------------- */
+
+
+
+
+/* --------------------open anim------------------------------- */
+#box2{
+  animation-name:opacity;
+  animation-duration:2s;
+}
+  @keyframes opacity{
+  0%{opacity:0;}
+  100%{opacity:1;}
+}
+/* -----------------------end---------------------------- */
+
+
+
+
+
+@media only screen and (min-width: 576px) {
+    #header {
+        height: 14vh;
+    }
+    
+    #iconset svg{
+        width: 21px;
+        height: 21px;
+        fill: var(--smicon);
+        margin-left: 24px;
+    }
+.scroll{
+    display: grid; grid-auto-flow: column; gap: 40px; grid-auto-columns: 100%;
+}
+#btn_download{
+    display: flex;
+  }
+  #md{
+    display: none;
+  }
+  #headerhight{
+    height: 6vh;width: 100vw;
+  }
+  #hamburger{
+    display: none;
+  }
+  #box{
+    transform: translateX(5%);
+    opacity: 0.2;
+    transition: transform 0.5s ease;
+  }
+  #box.show{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  #box2{
+    opacity: 0.2;
+    transform: translateX(3%);
+    transition: transform 1s ease;
+  }
+  #box2.show2{
+    opacity: 1;
+    transform: translateX(0);
+
+  }
+  #tools img{
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+
+ 
+  #mainccontainer{
+    overflow-y: hidden;
+  }
+  #mainimg{
+    width: 100%;
+  }
+    #padd{
+        padding: 33px 30px 33px 30px;
+      }
+      #thankyou{
+        display: none;
+      }
+     
+  
+ 
+}
+
+@media only screen and (width: 1200px) {
+
+ 
+  #md{
+    display: none;
+}
+     
+.scroll{
+  display: none;
+ }
+ 
+}
+
+
+
+
+/* ----------------------------------- */
+
+@media only screen and (max-width: 1200px) {
+
+    .scroll{
+     display: none;
+    }
+    #mainccontainer{
+      overflow-y: scroll;
+    }
+    
+    #md{
+        display: flex;
+        flex-direction: column;
+    }
+    #headerhight{
+        position: fixed;top: 0;
+        height: 14vh;width: 92vw;background-color: var(--body);
+      }
+   
+    #btn_download{
+        display: flex;
+      }
+      #hamburger{
+        display: none;
+      }
+      #mainimg{
+        width: 35vw;
+      }
+      #maindownld{
+        display: none;
+      }
+      #padd{
+        padding: 33px 30px 33px 30px;
+      } #hey{
+        font-size: 2.6vh;
+      }
+      #smiconintro{
+        display: none;
+      }
+      .scroll_indicator{
+        display: none;
+      }
+      #toolimg1 img{
+        height: 33px;
+      }
+}
+
+
+/* ---------------------------------- */
+
+@media only screen and (max-width: 922px) {
+
+    .scroll{
+     display: none;
+    }
+    #md{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #download{
+        display: none;
+    }
+    #headerhight{
+        height: 14vh;background-color: var(--body);
+      }
+    #btn_download{
+        display: flex;
+      }
+      #hamburger{
+        display: none;
+      }
+      #mainccontainer{
+        overflow-y: scroll;
+      }
+      #mainimg{
+        width: 35vw;
+        height: 35vw;
+      }
+      #maindownld{
+        display: none;
+      }
+      #padd{
+        padding: 33px 30px 33px 30px;
+      } #hey{
+        margin-top: 30px;
+        font-size: 2.6vh;
+      }
+      #smiconintro{
+        display: none;
+      }
+      .scroll_indicator{
+        display: none;
+      }
+      #toolimg1 img{
+        height: 33px;
+      }
+}
+
+
+/* --------------------------------- */
+
+@media only screen and (max-width: 767px) {
+
+    .scroll{
+     display: none;
+    }
+    #mainimg{
+      width: 35vw;
+      height: 35vw;
+    }
+    #md{
+        display: flex;
+        flex-direction: column;
+    }
+    #headerhight{
+        height: 14vh;
+        position: fixed;width: 90vw;top: 0;background-color: var(--body);
+
+      }
+   
+    #btn_download{
+        display: none;
+      }
+      #hamburger{
+        display: none;
+      }
+      #maindownld{
+        display: flex;
+        width: 60%;
+        margin-left: 15px;
+      }
+      #padd{
+        padding: 20px 20px 20px 20px;
+      }
+      #hey{
+        font-size: 2.6vh;
+        margin-top: 25px;
+      }
+      #smiconintro{
+        display: none;
+      }
+      .scroll_indicator{
+        display: none;
+      }
+      #toolimg1 img{
+        height: 33px;
+      }
+}
+
+
+/* ------------------------------------------- */
+
+@media only screen and (max-width: 576px) {
+
+          .scroll{
+           display: none;
+          }
+          #mainimg{
+            width: 35vw;
+            height: 35vw;
+            
+          }
+          #download{
+            display: none;
+        }
+          #md{
+            display: flex;
+            flex-direction: column;margin-top: 100px;
+          }
+          #btn_download{
+            display: none;
+          }
+          #headerhight{
+            height: 11vh;
+            position: fixed;width: 97vw;top: 0;
+            display: flex;
+            justify-content: center;align-items: center;background-color: var(--body);
+          }
+          #iconset{
+            display: none;
+          }
+          #mainccontainer{
+            padding: 0;
+            overflow-y: scroll;
+          }
+          #hamburger{
+            display: flex;
+          }
+          .scroll_indicator{
+            display: none;
+          }
+          #iconset_mob svg{
+            width: 30px;
+            height: auto;
+            fill: var(--main);
+
+          }
+          #smiconintro{
+            display: flex;
+          }
+          #smiconintro svg{
+            fill: var(--smicon);
+          }
+          #maindownld{
+            display: flex;
+            width: 60%;
+            margin-left: 15px;
+          }
+          #padd{
+            padding: 20px 15px 25px 15px;
+          }
+          #hey{
+            font-size: 2.8vh;
+            padding:0 0 20px 0;
+            margin-top: 10px;
+          }
+          #heyview{
+            font-size: 2.2vh;
+          }
+          #toolimg1 img{
+            height: 33px;
+          }
+}
+
