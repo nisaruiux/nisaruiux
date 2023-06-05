@@ -201,7 +201,7 @@ body::-webkit-scrollbar {
     transform: translateX(0);
 
   }
-  #tools img{
+  #tools svg{
     margin-bottom: 30px;
   }
 }
