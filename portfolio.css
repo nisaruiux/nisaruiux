@@ -1,6 +1,6 @@
 
 :root{
-    --body:#FCF1FF;
+  --body:#fdefff;
     --para:#808080;
     /* --toolbg:#F6F6F6;
     --expbg:#F6F6F6;
@@ -12,8 +12,8 @@
     --potfoliobg:#ffffff;
 
     --smicon:#4d4d4d;
-    --main:#8F00FF;
-    --main1:#BB64FF;
+    --main:#6500b0;
+    --main1:#950dff;
     /* --introbg:#F6F6F6;
     --aboutbg:#F1F5FE;
     --edubg:#f0f0f0;
@@ -28,6 +28,9 @@
     --contactbg:#ffffff;
     
     --scroll:#cfcfcf;
+
+    /* -------------- */
+    
 }
 
 #preloader{
@@ -164,11 +167,13 @@ body::-webkit-scrollbar {
     }
     
     #iconset svg{
-        width: 21px;
-        height: 21px;
-        fill: var(--para);
-        margin-left: 24px;
-    }
+      width: 21px;
+      height: 21px;
+      fill: var(--para);
+      margin-left: 24px;
+  }#iconset svg:hover{
+    fill: var(--main1);
+}
 .scroll{
     display: grid; grid-auto-flow: column; gap: 40px; grid-auto-columns: 100%;
 }
@@ -441,7 +446,7 @@ body::-webkit-scrollbar {
           #iconset_mob svg{
             width: 25px;
             height: auto;
-            fill: var(--indigo);
+            fill: var(--para);
 
           }
           #smiconintro{
