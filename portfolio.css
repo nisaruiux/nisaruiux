@@ -454,6 +454,8 @@ body::-webkit-scrollbar {
           }
           #smiconintro svg{
             fill: var(--para);
+            width: 25px;
+
           }
           #maindownld{
             display: flex;
