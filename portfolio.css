@@ -6,12 +6,12 @@
     --expbg:#F6F6F6;
     --potfoliobg:#F1F5FE; */
 
-
+    --indigo:#4B0082;
     --toolbg:#ffffff;
     --expbg:#ffffff;
     --potfoliobg:#ffffff;
 
-    --smicon:#3F3F3F;
+    --smicon:#4d4d4d;
     --main:#8F00FF;
     --main1:#BB64FF;
     /* --introbg:#F6F6F6;
@@ -111,6 +111,8 @@ body::-webkit-scrollbar {
   font-size: 14px;
   color: var(--para);
   font-weight: 300;text-align: justify;
+  margin-bottom: 0;
+
 }
 
 #smile{
@@ -411,13 +413,14 @@ body::-webkit-scrollbar {
         }
           #md{
             display: flex;
-            flex-direction: column;margin-top: 100px;
+            flex-direction: column;margin-top: 17vw;
           }
           #btn_download{
             display: none;
           }
           #headerhight{
-            height: 11vh;
+           
+            height: 17vw;
             position: fixed;width: 97vw;top: 0;
             display: flex;
             justify-content: center;align-items: center;background-color: var(--body);
@@ -436,16 +439,16 @@ body::-webkit-scrollbar {
             display: none;
           }
           #iconset_mob svg{
-            width: 30px;
+            width: 25px;
             height: auto;
-            fill: var(--main);
+            fill: var(--indigo);
 
           }
           #smiconintro{
             display: flex;
           }
           #smiconintro svg{
-            fill: var(--smicon);
+            fill: var(--para);
           }
           #maindownld{
             display: flex;
@@ -465,6 +468,13 @@ body::-webkit-scrollbar {
           }
           #toolimg1 img{
             height: 33px;
+          }
+          #common_para{
+            font-size: 16px;
+            color: var(--para);
+            font-weight: 300;text-align: justify;
+            margin-bottom: 0;
+          
           }
 }
 
