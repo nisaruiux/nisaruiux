@@ -262,11 +262,14 @@ body::-webkit-scrollbar {
     
     #md{
         display: flex;
-        flex-direction: column;
+        flex-direction: column;margin-top: 14vh;
     }
     #headerhight{
         position: fixed;top: 0;
         height: 14vh;width: 92vw;background-color: var(--body);
+      }
+      #header{
+        padding: 0;height:fit-content;
       }
    
     #btn_download{
@@ -284,7 +287,7 @@ body::-webkit-scrollbar {
       #padd{
         padding: 33px 30px 33px 30px;
       } #hey{
-        font-size: 2.6vh;
+        font-size: 20px;
       }
       #smiconintro{
         display: none;
@@ -294,6 +297,9 @@ body::-webkit-scrollbar {
       }
       #toolimg1 img{
         height: 33px;
+      }
+      #btmd{
+        display: none;
       }
 }
 
@@ -307,9 +313,11 @@ body::-webkit-scrollbar {
     }
     #md{
         display: flex;
-        flex-direction: column;
+        flex-direction: column;margin-top: 14vh;
     }
-    
+    #header{
+      padding: 0;height:fit-content;
+    }
     #download{
         display: none;
     }
@@ -326,8 +334,8 @@ body::-webkit-scrollbar {
         overflow-y: scroll;
       }
       #mainimg{
-        width: 35vw;
-        height: 35vw;
+        width: 100%;
+        height: 100%;
       }
       #maindownld{
         display: none;
@@ -336,7 +344,7 @@ body::-webkit-scrollbar {
         padding: 33px 30px 33px 30px;
       } #hey{
         margin-top: 30px;
-        font-size: 2.6vh;
+        font-size: 20px;
       }
       #smiconintro{
         display: none;
@@ -346,6 +354,9 @@ body::-webkit-scrollbar {
       }
       #toolimg1 img{
         height: 33px;
+      }
+      #btmd{
+        display: none;
       }
 }
 
@@ -358,19 +369,21 @@ body::-webkit-scrollbar {
      display: none;
     }
     #mainimg{
-      width: 35vw;
-      height: 35vw;
+      display: none;
     }
     #md{
         display: flex;
-        flex-direction: column;
+        flex-direction: column;margin-top: 12vw;
     }
     #headerhight{
-        height: 14vh;
+        height: 12vw;
         position: fixed;width: 90vw;top: 0;background-color: var(--body);
+        padding-top: 0vw;
 
       }
-   
+      #header{
+        padding: 0;height:fit-content;
+      }
     #btn_download{
         display: none;
       }
@@ -378,15 +391,13 @@ body::-webkit-scrollbar {
         display: none;
       }
       #maindownld{
-        display: flex;
-        width: 60%;
-        margin-left: 15px;
+        display: none;
       }
       #padd{
-        padding: 20px 20px 20px 20px;
+        padding: 33px 30px 33px 30px;
       }
       #hey{
-        font-size: 2.6vh;
+        font-size: 20px;
         margin-top: 25px;
       }
       #smiconintro{
@@ -398,6 +409,9 @@ body::-webkit-scrollbar {
       #toolimg1 img{
         height: 33px;
       }
+      #btmd{
+        display: flex;
+      }
 }
 
 
@@ -408,27 +422,30 @@ body::-webkit-scrollbar {
           .scroll{
            display: none;
           }
-          #mainimg{
+          /* #mainimg{
             width: 35vw;
             height: 35vw;
             
-          }
+          } */
           #download{
             display: none;
         }
           #md{
             display: flex;
-            flex-direction: column;margin-top: 17vw;
+            flex-direction: column;margin-top: 15vw;
           }
           #btn_download{
             display: none;
           }
           #headerhight{
            
-            height: 17vw;
+            height: 15vw;
             position: fixed;width: 97vw;top: 0;
             display: flex;
             justify-content: center;align-items: center;background-color: var(--body);
+          }
+          #header{
+            padding: 0;height:fit-content;
           }
           #iconset{
             display: none;
@@ -454,24 +471,23 @@ body::-webkit-scrollbar {
           }
           #smiconintro svg{
             fill: var(--para);
-            width: 25px;
+            width: 23px;
 
           }
-          #maindownld{
+          #btmd{
             display: flex;
-            width: 60%;
-            margin-left: 15px;
           }
+          
           #padd{
             padding: 20px 15px 25px 15px;
           }
           #hey{
-            font-size: 2.8vh;
+            font-size: 20px;
             padding:0 0 20px 0;
             margin-top: 10px;
           }
           #heyview{
-            font-size: 2.2vh;
+            font-size: 16px;
           }
           #toolimg1 img{
             height: 33px;
