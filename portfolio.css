@@ -42,7 +42,10 @@
   z-index: 100;
 }
 
-
+@font-face {
+  font-family: railway;
+  src: url(Raleway-Medium.ttf);
+}
 
 body::-webkit-scrollbar { 
   width: 0 !important;
