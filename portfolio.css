@@ -1,6 +1,6 @@
 
 :root{
-  --body:#fdefff;
+  --body:  #fbeaff;
     --para:#666666;
     /* --toolbg:#F6F6F6;
     --expbg:#F6F6F6;
@@ -12,8 +12,8 @@
     --potfoliobg:#ffffff;
 
     --smicon:#4d4d4d;
-    --main:#6500b0;
-    --main1:#950dff;
+    --main:#643CED;
+    --main1:#733DEF;
     /* --introbg:#F6F6F6;
     --aboutbg:#F1F5FE;
     --edubg:#f0f0f0;
@@ -47,6 +47,33 @@
   src: url(Raleway-Medium.ttf);
 }
 
+#nav-tab button{
+  color: var(--para) ;
+}
+
+#nav-tab button.active{
+  color: var(--main) ;
+  background-color: var(--body);
+  border-color: var(--body);
+}
+#nav-tab{
+  border-color: var(--body);
+}
+
+.tab-pane img:hover{
+  scale: 99%;
+  transition: 0.3s ease;
+}
+.carousel-indicators button.active{
+    opacity: 1;
+}
+#btn_download:hover{
+  background-color: var(--indigo);
+}
+#btn_download{
+  background-color: var(--main);
+  transition: all .2s ease-in-out;
+}
 body::-webkit-scrollbar { 
   width: 0 !important;
   display: none; 
@@ -79,14 +106,14 @@ body::-webkit-scrollbar {
 
   #scroll_indicator{
     width: 150px;
-    height: 3px;
+    height: 2px;
     border-radius: 50px;
-    background-color: #8F00FF;
+    background-color: var(--main);
 }
 .scroll_indicator{
     width: 150px;
-    height: 3px;
-    background-color: #d9a8ff;
+    height: 2px;
+    background-color:#ccd0ff;
     border-radius: 50px;
 }
 
@@ -135,14 +162,20 @@ body::-webkit-scrollbar {
 
 
 .card-text{
-  font-size: 14px;
+  font-size: 13px;
   color: var(--para);
 }
 .card-title{
-  font-size: 16px;
+  font-size: 14px;
+  color: var(--main);
 }
 
-
+#btn11:hover{
+  background-color: #4A4B5F;
+}
+#btn11{
+  background-color:#2F3042;
+}
 /* -----------------card-end---------------------- */
 
 
@@ -241,24 +274,11 @@ body::-webkit-scrollbar {
  
 }
 
-@media only screen and (width: 1200px) {
-
- 
-  /* #md{
-    display: none;
-}
-     
-.scroll{
-  display: none;
- }
-  */
+@media only screen and (width:1200px) {
   body{
     display: none;
   }
 }
-
-
-
 
 /* ----------------------------------- */
 
@@ -478,7 +498,7 @@ body::-webkit-scrollbar {
 
           }
           #smiconintro{
-            display: flex;
+            display: none;
           }
           #smiconintro svg{
             fill: var(--para);
