@@ -52,12 +52,13 @@
 }
 
 #nav-tab button.active{
-  color: var(--main) ;
-  background-color: var(--body);
+  color: var(--smicon) ;
   border-color: var(--body);
+  border-bottom: 2px solid var(--main);
 }
 #nav-tab{
   border-color: var(--body);
+  margin-bottom: 3px;
 }
 
 .tab-pane img:hover{
