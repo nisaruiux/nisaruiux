@@ -167,11 +167,11 @@ body::-webkit-scrollbar {
 
 
 .card-text{
-  font-size: 13px;
+  font-size: 0.928vw;
   color: var(--para);
 }
 .card-title{
-  font-size: 14px;
+  font-size: 1vw;
   color: var(--main);
 }
 
@@ -202,6 +202,7 @@ body::-webkit-scrollbar {
 
 
 @media only screen and (min-width: 576px) {
+  
     #header {
         height: 14vh;
     }
@@ -253,6 +254,7 @@ body::-webkit-scrollbar {
   }
 }
 
+
 @media only screen and (min-width: 1201px) {
 
  
@@ -269,7 +271,7 @@ body::-webkit-scrollbar {
         display: none;
       }
       #common_para{
-        font-size: 14px;
+        font-size: 1vw;
         color: var(--para);
         text-align: justify;
       
@@ -316,6 +318,10 @@ body::-webkit-scrollbar {
       }
       #mainimg{
         width: 35vw;
+      }
+      #tools svg{
+        height: 2.857vw;
+        width: 1.857vw;
       }
       #maindownld{
         display: none;
