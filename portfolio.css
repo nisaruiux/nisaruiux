@@ -111,13 +111,13 @@ body::-webkit-scrollbar {
 
   #scroll_indicator{
     width: 150px;
-    height: 2px;
+    height: .1428vw;
     border-radius: 50px;
     background-color: var(--main);
 }
 .scroll_indicator{
     width: 150px;
-    height: 2px;
+    height: .1428vw;
     background-color:#ccd0ff;
     border-radius: 50px;
 }
@@ -208,8 +208,8 @@ body::-webkit-scrollbar {
     }
     
     #iconset svg{
-      width: 21px;
-      height: 21px;
+      width: 1.5vw;
+      height: 1.5vw;
       fill: var(--para);
       margin-left: 24px;
   }#iconset svg:hover{
