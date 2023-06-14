@@ -49,16 +49,20 @@
 
 #nav-tab button{
   color: var(--para) ;
+  border: none;
 }
-
+#nav-tab button:hover{
+  border: none;
+}
 #nav-tab button.active{
   color: var(--smicon) ;
   border-color: var(--body);
-  border-bottom: 2px solid var(--main);
+  border: none;
+  border-radius: 0;
+  border-bottom: 3px solid var(--main);
 }
 #nav-tab{
   border-color: var(--body);
-  margin-bottom: 3px;
 }
 
 .tab-pane img:hover{
