@@ -37,14 +37,14 @@
                 style="display: flex;align-items: center;justify-content: center;z-index: 10;">
                 <div class="row" id="headerhight">
                     <div class="col-xl-4 col-4 " style="display: flex;align-items: center;">
-                        <a href="#"><img style="height: 2.142vw;width: auto;" src="logo.svg" alt=""></a>
+                        <a href="#"><img id="nslogo" style="width: auto;" src="logo.svg" alt=""></a>
                     </div>
                     <div class="col-xl-8 col-8 " style="display: flex;align-items: center;justify-content: end;">
                         <div>
                             <button id="btn_download" onclick="location.href='nisar_resume.pdf';"
-                                style="border: none; border-radius: 30PX; align-items: center;justify-content: center;padding: 12px 40px;">
-                                <img id="Download" src="download.svg" alt="" style="height: 1vw;width: auto;">
-                                <p style="font-size: 1vw;font-weight: 400;margin: 0;margin-left: 10px;color: white;">
+                                style=" border: none; border-radius: 30PX; align-items: center;justify-content: center;padding: 12px 40px;">
+                                <img id="Download" src="download.svg" alt="" style="width: auto;">
+                                <p style="font-weight: 400;margin: 0;margin-left: 10px;color: white;">
                                     <span id="download">Download</span> my resume
                                 </p>
                             </button>
@@ -83,8 +83,6 @@
                                         style="border-radius:400px; height: 35vw;width: 35vw;background-color: var(--main1);object-fit: contain;">
                                         <div
                                             style="border-radius:400px; height: 35vw;width: 35vw;background-image: url(photo-removebg-preview.png);background-repeat: no-repeat;background-size: cover;background-position: center;">
-                                            <!-- <img style="height: 35vw;width: 35vw;" src="photo-removebg-preview.png" alt=""> -->
-
                                         </div>
                                     </div>
 
@@ -92,8 +90,8 @@
                                         <b>Muhammed nisar</b> <br> <span style="font-size: 14px;font-weight: 300;"> Ui
                                             ux designer</span>
                                     </p>
-                                    <button id="btmd" onclick="location.href='nisar_resume.pdf';"
-                                        style="background:var(--main);border: none; border-radius: 50PX; align-items: center;justify-content: center;padding: 12px 40px;margin-top: 10px;">
+                                    <button id="btmd" onclick="location.href='nisar_resume.pdf' ;" formtarget="_blank"
+                                        style="background:var(--main);border: none; border-radius: 50px; align-items: center;justify-content: center;padding: 12px 40px;margin-top: 10px;">
                                         <div style="display: flex;align-items: center;justify-content: center;">
                                             <img id="Download" src="download.svg" alt="" style="height: 15px;">
                                             <p
@@ -121,21 +119,7 @@
 
                                     <div >
 
-                                        <!-- <a style="text-decoration: none;" href="">
-                                            <h1
-                                                style="font-size: 40px;font-weight: bold;line-height: 1.5; color: var(--indigo);">
-                                                ABOUT</h1>
-                                        </a>
-                                        <a style="text-decoration: none;" href="#padd">
-                                            <h1
-                                                style="font-size: 40px;font-weight: bold;line-height: 1.5; color: var(--indigo);">
-                                                CONNECT</h1>
-                                        </a>
-                                        <a style="text-decoration: none;" href="">
-                                            <h1
-                                                style="font-size: 40px;font-weight: bold;line-height: 1.5; color: var(--indigo);">
-                                                PORTFOLIO</h1>
-                                        </a> -->
+                                        
                                         <div id="iconset_mob"
                                             style=" display: flex;align-items: center; justify-content: space-evenly;margin-top: 20px;width: 70vw;height: 15vw;border-radius: 10px;">
                                             <a style="text-decoration: none;"
@@ -966,7 +950,7 @@
                                                             <div
                                                                 style="display: grid;height:67vh; padding: 0 40px 0 35px;">
                                                                 <nav>
-                                                                    <div style="font-size: 1vw;" class="nav nav-tabs"
+                                                                    <div style="font-size: 1vw;margin-bottom: 1px;" class="nav nav-tabs"
                                                                         id="nav-tab" role="tablist">
                                                                         <button class="nav-link active"
                                                                             id="nav-home-tab" data-bs-toggle="tab"
@@ -1002,7 +986,7 @@
                                                                             data-bs-toggle="tab"
                                                                             data-bs-target="#nav-hunt" type="button"
                                                                             role="tab" aria-controls="nav-contact"
-                                                                            aria-selected="false">Treasure hunt</button>
+                                                                            aria-selected="false">Other</button>
 
                                                                     </div>
                                                                 </nav>
