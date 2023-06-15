@@ -259,6 +259,9 @@ body::-webkit-scrollbar {
   #tools svg{
     margin-bottom: 2.142vw;
   }
+  #nslogo{
+    height: 40px;
+  }
 }
 
 
