@@ -200,7 +200,9 @@ body::-webkit-scrollbar {
 }
 /* -----------------------end---------------------------- */
 
-
+#nslogo{
+  height: 60px;
+}
 
 
 
@@ -260,7 +262,7 @@ body::-webkit-scrollbar {
     margin-bottom: 2.142vw;
   }
   #nslogo{
-    height: 50px;
+    height: 30px;
   }
 }
 
