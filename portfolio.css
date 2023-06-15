@@ -63,6 +63,7 @@
   border-radius: 0;
   box-sizing: border-box;
   border-bottom: 3px solid var(--main);
+  box-shadow: none;
   outline: none;
 }
 #nav-tab{
